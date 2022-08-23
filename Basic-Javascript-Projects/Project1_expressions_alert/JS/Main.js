@@ -6,3 +6,5 @@ window.alert("\"Do you know what the chain of command is?  " + "It's the chain i
 var Sent1 = "This is the begining of the string...  ", Sent2 = "and this is the end of the string." //this is creating mulitiple variables.
 
 document.write (Sent1 + Sent2);//this is an expression telling the program to write the value of variables Sent1 and Sent2 which will result in a concatenated string.
+
+
