@@ -3,19 +3,26 @@
         <head>
             <meta charset="utf-8">
             <title> Math in Java</title>
-            <script src="./JS/main.js"></script>
+            <script src="./JS/main.js"></script> <!--make sure to source your javascript properly in the head section-->
         </head>
         <body>
-            <p id="math" onmouseover= "compute()"defer> Let's Subtract!</p>
+
+            <!-- A good way to perform math operations is to do it in a javascript function-->    
+            <!--  When you want to include a math function, make sure you assign the elemnet and Id, and some sort of trigger (onclick,onmouseover,onload)-->
+            <p id="math" onmouseover= "compute()"> Let's Subtract!</p>
+            <br>
+                <!--Onmouseover means that it will perform the funtion on the element as soon as your pointer touches it on the screen.-->
             <p id="Add" onmouseover="addition()">Let's Add!</p>
 
             <br>
 
-            <p id="multiplication" onmouseover="Simple_Math()"defer>Let's Multiply</p>
+            <p id="multiplication" onmouseover="Simple_Math()">Let's Multiply</p>
 
         <br>
-            <button id="divide" onclick="Division()"defer>Let's Divide!</button>
+            <!-- will create a clickable button that you can change with a function-->
+            <button id="divide" onclick="Division()">Let's Divide!</button>
         <br>
+            <!-- You can also make a clickable element just by adding onclick as your trigger-->
             <h3 id =equations onclick="More_Math()">Let's do a big equation</h3>
         <br>
             <h4 id="modulus" onmouseover="remainder()">What is the remainder?</h4>
