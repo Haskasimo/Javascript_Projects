@@ -1,0 +1,186 @@
+
+ /*---------Home nav--------------*/
+ #home {
+    overflow: hidden;
+   background-color: #a5bba9;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    display: inline;
+    border: 1px solid black;
+ }
+ .navbar a {
+    text-align: center;
+    float: left;
+    display:block;
+    color: #f6fffa;
+    padding: 45px 80px;
+    text-decoration: none;
+    font-size: 27px;
+    
+ }
+ .navbar img {
+    float: left;
+ }
+
+ .navbar a:hover {
+    background-color: rgb(202, 230, 203) ;
+    color: #000;
+ }
+
+ /* ----------styling for slideshow------------------*/
+ * {box-sizing: border-box;}
+
+
+ /*---Slideshow container--*/
+ .slideshow-container {
+    max-width: 1000px;
+    position:relative;
+    margin: auto;
+    height: 200px;
+ }
+
+ /*----Hide images by defult-------*/
+ .mySlides fade {
+    display: none;
+ }
+
+ /*------Next and Previous buttons --------*/
+ .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    width:auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: .6s ease;
+    border-radius: 0 3px 3px 0;
+ }
+
+ /* Position the "next button" to the right*/
+ .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+ } 
+
+ /*---- on hover, add a black background color with a little bit of see though---*/
+ .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+ }
+
+ /*-- Number text (1/6 ect) ---*/
+ .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position:absolute;
+    top: 0;
+ }
+ /*--The dot bullet indicators--*/
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover{
+    background-color: #717171;
+}
+
+/* fading animation */
+.fade {
+    animation-name:fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity:1}
+}
+
+/* --------styling for units-------------*/
+.column {
+   float: left;
+   width: 25%;
+   padding: 0 10px;
+   margin: auto;
+}
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin:auto;
+padding-bottom: 25px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 20px;
+  background-color: #f1f1f1;
+
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+}
+.card-img-top {
+   width: 100%;
+   border-radius:  4px 4px;
+   box-shadow: 0 0 4px #000;
+
+
+}
+.Rental_Cards {
+   background-color: #a5bba9;
+}
+
+.card-title {
+   font-size: 25px;
+   color: #638769;
+}
+
+.card-text {
+   font-size: 20px;
+}
+.Rental_Cards h1 {
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 45px;
+   text-align: center;
+   padding-top: 25px;
+}
+
+.info {
+   font-size: 20px;
+   text-align: center;
+   background-color: #638769;
+   color: #f6fffa;
+   border-radius: 8px;
+}
+.info:hover{
+   color: #000;
+   background-color: #a5bba9;
+   transition: ease .5s;
+   cursor: pointer;
+}
+
+button {
+   margin: 4px 35%;
+}
