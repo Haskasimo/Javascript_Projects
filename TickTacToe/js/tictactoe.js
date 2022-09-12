@@ -80,7 +80,7 @@ function checkWinConditions() {
     // X 6, 7, 8 condition.
     else if (arrayIncludes('6X', '7X', '8X')) {drawWinLine(50, 508, 558, 508)}
     // X 0, 3, 6 condition.
-    else if (arrayIncludes('0X', '3X', '3X')) { drawWinLine(100, 50,100, 558)}
+    else if (arrayIncludes('0X', '3X', '6X')) { drawWinLine(100, 50,100, 558)}
     // X 1, 4, 7 condition.
     else if (arrayIncludes('1X', '4X', '7X')) {drawWinLine(304, 50, 304, 558)}
     // X 2, 5, 8 condition.
@@ -224,7 +224,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
 function resetGame() {
     for (let i=0; i<9; i++)// this loop iterastes through each square element. 
         {let square = document.getElementById(String(i));
-        square.style,backgroundImage = "";
+        square.style.backgroundImage = "";
         }
         //This resets array so it is empty so we can start over. 
         selectedSquares = [];
