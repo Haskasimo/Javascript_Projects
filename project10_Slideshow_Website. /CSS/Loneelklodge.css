@@ -113,6 +113,12 @@
    padding: 0 10px;
    margin: auto;
 }
+.column2 {
+   float: right;
+   width: 50%;
+   padding: 0 10px;
+   margin: auto;
+}
 /* Remove extra left and right margins, due to padding in columns */
 .row {margin:auto;
 padding-bottom: 25px;}
