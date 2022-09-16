@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <title>JQuery Events</title>
+            <style>
+                p {
+                    
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin: 10px;
+
+                }
+                p:hover {
+                    cursor: pointer;
+                    color: blueviolet;
+                    text-shadow: 2px 2px 6px;
+                }
+            </style> 
+            <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+            crossorigin="anonymous">
+            </script>
+
+        </head>
+        <body>
+            <button id="click"> Let's trigger an alert</button>
+
+            <h4>We can also use effects to show or hide certain elements.</h4>
+            
+            <p>When you click me I will hide away </p>
+            <p>I will as well</p>
+            <p>me too!</p>
+
+            <script>
+                //here we use Jquery to trigger an event
+                $("#click").click(function() {
+                    alert( "through short hand jQuery, we can trigger events without having to write a lot of code.") //this maically takes away having to write document.getEementByID
+
+                });
+                //if you need an animation or an effect to an element you can use Jquery. ".slideup"
+                $("p").click(function() {
+                    $(this).slideUp();
+                });
+                
+                
+            </script>
+
+        </body>
+    </html>
