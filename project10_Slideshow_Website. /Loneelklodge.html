@@ -4,6 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8" />
     <title>Lone Elk Lodge</title>
     <link rel="stylesheet" href="./CSS/Loneelklodge.css">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     
 </head>
 <body>
@@ -15,7 +17,13 @@
                     <a href="#home">Home</a>
                     <a href="#units">View Our Rentals</a>
                     <a href="#rent">Book Your Stay</a>
-                    <a href="#glacier">Visit Glacier Park</a>
+                       <!--<ul>
+                            <li><a href="https://www.vrbo.com/1252356?noDates=true&unitId=1803315">Sinopah</a>></li>
+                            <li><a href="https://www.vrbo.com/1260349?noDates=true&unitId=1811317"></a>Rising Wolf</li>
+                            <li><a href="https://www.vrbo.com/118196?noDates=true&unitId=118196">Summit</a></li>
+                            <li><a href="https://www.vrbo.com/1190332?noDates=true&unitId=1741090">Two Medicine</a></li>
+                        </ul>-->
+                    <a href="https://www.nps.gov/glac/index.htm">Visit Glacier Park</a>
         </div>
     </section>
     <!--End Nav-->
@@ -150,10 +158,44 @@
     </div>
 </section>
     <!--End Gallery-->
+    <!-- Questions-->
+    <div class="contactUs">
+    <div class="row">
+        <h1 class="heading"> Have Questions</h1>
+        <div class="column_1">
+            
+            <img class="email" src="./Images/Thumb/email.png" width="30%">
+        </div>
+        <!-- contact popup-->
+        <div class="column_2">
+            <button class="QuestionUs" onclick="openForm()">Contact</button>
+                <div class="form-popup" id="ContactForm">
+                    <form action="" class="form-container">
+                        <h2> contact us</h2>
+                        <label for="name">Name</label>
+                        <input type="text" placeholder="Name" name="name" required>
+                        
+                        <label for="email">Email Address</label>
+                        <input type="email" placeholder="Email" name="email" required>
+
+                        <label for="message">Message</label>
+                        <input type="text" placeholder="Type message here..." name="message" required>
+                        <div class="row">
+                            <div class="sendbtn">
+                                <button type="submit" class="send">Send</button>
+                            </div>
+                            <div class="cancelbtn">
+                                <button type="button" class="Cancel" onclick="closeForm()">Close</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+        </div>
+    </div>
+    </div>
     <!--Footer-->
     <div>
-        www.lonelklodge.com  &nbsp;|&nbsp; &copy;2022
-    </div>
+        www.lonelklodge.com  &nbsp;|&nbsp; &copy;2022 &nbsp;|&nbsp; contact : <a href="lesliehaggar@yahoo.com"> Email</a>    </div>
     <!--End Footer-->
     <div>
         <script src="./JS/Loneelklodge.js"></script>

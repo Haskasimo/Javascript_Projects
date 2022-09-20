@@ -27,5 +27,18 @@ function showSlides(n) {
     dots[slideIndex-1].className += " active";
   }
 
-  
+  //this will add the ability to fade the page onload
+  document.body.classList.add('fade-out');
 
+window.addEventListener('DOMContentLoaded', () => {
+  document.body.classList.remove('fade-out');
+});
+
+//popup features for contact form
+function openForm() {
+  document.getElementById('ContactForm').style.display="block";
+}
+
+function closeForm() {
+  document.getElementById("ContactForm").style.display='none';
+}
