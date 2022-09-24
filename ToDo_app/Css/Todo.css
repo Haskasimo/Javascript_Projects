@@ -1,0 +1,104 @@
+
+
+html {
+    font-family: "Avenir Next", Helvetica, sans-serif;
+    text-align: center;
+}
+body {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input {
+    padding-top: 30px;
+    width: 500px;
+    height: 60px;
+    font-size: 40px;
+    border: 0;
+}
+input:focus {
+    outline:none;
+}
+
+li {
+    text-align: left;
+    font-size: 40px;
+    list-style: none;
+    margin: 0;
+}
+#page-container {
+  position:relative ;
+  min-height: 90vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;
+}
+/*------------------------Footer/ and social media---------------------------------*/
+footer {
+   
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: block;
+    margin-top: 50px;
+    bottom: 0px;
+    width: 100%;
+    border:2px solid #125688;
+    background-color: rgb(193, 224, 251);
+    
+}
+
+footer p{
+    display: inline;
+    font-size: large;
+}
+
+/* social media icons
+/* Style all font awesome icons */
+.fa {
+    padding: 15px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  /* Linkedin */
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  /* instagram */
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+  .remove {
+    padding-bottom: 5px;
+  }

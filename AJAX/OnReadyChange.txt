@@ -1,6 +1,0 @@
-<h2> AJAX is a technique for accessing web servers from a web page.</h2>
-<p> the onreadystatechange: defines a function to be called when the readyState property changes.</p>
-<p> The readyState: Holds the status of the XMLHttpRequest. </p>
-<p>the status be sevral numbers: 200:Ok, 403: forbidden, 404: page not found, are the most common.</p> 
-<p> statustext: returns the statustext---> 200, 403, 404 </p>
-
